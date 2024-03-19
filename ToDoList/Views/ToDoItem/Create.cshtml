@@ -1,0 +1,13 @@
+﻿
+<h1>Create a new To Do Item</h1>
+
+<form asp-controller="ToDoItem" asp-action="Items" method="post">
+    <div class="form-group">
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName" name="userName" class="form-control" required />
+    </div>
+    <div>
+        @ViewData["msg"]
+    </div><br />
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
